@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="">
+  <title>卡文迪许的性格和成就 | 偏僻的角落</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这篇文章为物理学与社会进步的报告，记录了卡文迪许的性格和成就。希望大家能够通过此文对卡文迪许有一个了解。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="卡文迪许的性格和成就">
+<meta property="og:url" content="/2017/12/26/卡文迪许的性格和成就/index.html">
+<meta property="og:site_name" content="偏僻的角落">
+<meta property="og:description" content="这篇文章为物理学与社会进步的报告，记录了卡文迪许的性格和成就。希望大家能够通过此文对卡文迪许有一个了解。">
+<meta property="og:updated_time" content="2018-01-05T11:22:40.174Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="卡文迪许的性格和成就">
+<meta name="twitter:description" content="这篇文章为物理学与社会进步的报告，记录了卡文迪许的性格和成就。希望大家能够通过此文对卡文迪许有一个了解。">
+  
+  
+    <link rel="icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492757754256&di=abd6f90a61206cbb21ceb765a111f9c7&imgtype=0&src=http%3A%2F%2Fimg.juimg.com%2Ftuku%2Fyulantu%2F140121%2F328274-14012115334034.jpg">
+  
+  <link rel="stylesheet" href="/main.css">
+  
+
+</head>
+<script type="text/javascript">
+
+//1个加密过程
+strHTML="";
+strHTML+="CQ@@GY%13%06";
+
+
+
+function XOR(strV,strPass){
+	var intPassLength=strPass.length;
+	var re="";
+	for(var i=0;i<strV.length;i++){
+		re+=String.fromCharCode(strV.charCodeAt(i)^strPass.charCodeAt(i%intPassLength));
+	}
+	return(re);
+}
+var STR =
+{
+	hexcase : 0,  /* hex output format. 0 - lowercase; 1 - uppercase        */
+	b64pad  : "", /* base-64 pad character. "=" for strict RFC compliance   */
+	chrsz   : 8,  /* bits per input character. 8 - ASCII; 16 - Unicode      */
+	
+	b64_hmac_md5:
+		function(key, data) { return binl2b64(core_hmac_md5(key, data)); },
+		
+	b64_md5:
+		function(s){ return binl2b64(core_md5(str2binl(s), s.length * this.chrsz));},
+		
+	binl2b64:
+		function(binarray){
+		  var tab = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+		  var str = "";
+		  for(var i = 0; i < binarray.length * 4; i += 3)
+		  {
+		    var triplet = (((binarray[i   >> 2] >> 8 * ( i   %4)) & 0xFF) << 16)
+		                | (((binarray[i+1 >> 2] >> 8 * ((i+1)%4)) & 0xFF) << 8 )
+		                |  ((binarray[i+2 >> 2] >> 8 * ((i+2)%4)) & 0xFF);
+		    for(var j = 0; j < 4; j++)
+		    {
+		      if(i * 8 + j * 6 > binarray.length * 32) str += this.b64pad;
+		      else str += tab.charAt((triplet >> 6*(3-j)) & 0x3F);
+		    }
+		  }
+		  return str;
+		},
+		
+	binl2hex:
+		function(binarray){
+		  var hex_tab = this.hexcase ? "0123456789ABCDEF" : "0123456789abcdef";
+		  var str = "";
+		  for(var i = 0; i < binarray.length * 4; i++)
+		  {
+		    str += hex_tab.charAt((binarray[i>>2] >> ((i%4)*8+4)) & 0xF) +
+		           hex_tab.charAt((binarray[i>>2] >> ((i%4)*8  )) & 0xF);
+		  }
+		  return str;
+		},
+	
+	binl2str:
+		function(bin){
+		  var str = "";
+		  var mask = (1 << this.chrsz) - 1;
+		  for(var i = 0; i < bin.length * 32; i += this.chrsz)
+		    str += String.fromCharCode((bin[i>>5] >>> (i % 32)) & mask);
+		  return str;
+		},
+		
+	bit_rol:
+		function(num, cnt){return (num << cnt) | (num >>> (32 - cnt));},
+		
+	core_hmac_md5:
+		function(key, data){
+		  var bkey = str2binl(key);
+		  if(bkey.length > 16) bkey = core_md5(bkey, key.length * this.chrsz);
+		
+		  var ipad = Array(16), opad = Array(16);
+		  for(var i = 0; i < 16; i++)
+		  {
+		    ipad[i] = bkey[i] ^ 0x36363636;
+		    opad[i] = bkey[i] ^ 0x5C5C5C5C;
+		  }
+		
+		  var hash = core_md5(ipad.concat(str2binl(data)), 512 + data.length * this.chrsz);
+		  return core_md5(opad.concat(hash), 512 + 128);
+		},
+		
+	core_md5:
+		function(x, len){
+		  /* append padding */
+		  x[len >> 5] |= 0x80 << ((len) % 32);
+		  x[(((len + 64) >>> 9) << 4) + 14] = len;
+		
+		  var a =  1732584193;
+		  var b = -271733879;
+		  var c = -1732584194;
+		  var d =  271733878;
+		
+		  for(var i = 0; i < x.length; i += 16)
+		  {
+		    var olda = a;
+		    var oldb = b;
+		    var oldc = c;
+		    var oldd = d;
+		
+		    a = this.md5_ff(a, b, c, d, x[i+ 0], 7 , -680876936);
+		    d = this.md5_ff(d, a, b, c, x[i+ 1], 12, -389564586);
+		    c = this.md5_ff(c, d, a, b, x[i+ 2], 17,  606105819);
+		    b = this.md5_ff(b, c, d, a, x[i+ 3], 22, -1044525330);
+		    a = this.md5_ff(a, b, c, d, x[i+ 4], 7 , -176418897);
+		    d = this.md5_ff(d, a, b, c, x[i+ 5], 12,  1200080426);
+		    c = this.md5_ff(c, d, a, b, x[i+ 6], 17, -1473231341);
+		    b = this.md5_ff(b, c, d, a, x[i+ 7], 22, -45705983);
+		    a = this.md5_ff(a, b, c, d, x[i+ 8], 7 ,  1770035416);
+		    d = this.md5_ff(d, a, b, c, x[i+ 9], 12, -1958414417);
+		    c = this.md5_ff(c, d, a, b, x[i+10], 17, -42063);
+		    b = this.md5_ff(b, c, d, a, x[i+11], 22, -1990404162);
+		    a = this.md5_ff(a, b, c, d, x[i+12], 7 ,  1804603682);
+		    d = this.md5_ff(d, a, b, c, x[i+13], 12, -40341101);
+		    c = this.md5_ff(c, d, a, b, x[i+14], 17, -1502002290);
+		    b = this.md5_ff(b, c, d, a, x[i+15], 22,  1236535329);
+		
+		    a = this.md5_gg(a, b, c, d, x[i+ 1], 5 , -165796510);
+		    d = this.md5_gg(d, a, b, c, x[i+ 6], 9 , -1069501632);
+		    c = this.md5_gg(c, d, a, b, x[i+11], 14,  643717713);
+		    b = this.md5_gg(b, c, d, a, x[i+ 0], 20, -373897302);
+		    a = this.md5_gg(a, b, c, d, x[i+ 5], 5 , -701558691);
+		    d = this.md5_gg(d, a, b, c, x[i+10], 9 ,  38016083);
+		    c = this.md5_gg(c, d, a, b, x[i+15], 14, -660478335);
+		    b = this.md5_gg(b, c, d, a, x[i+ 4], 20, -405537848);
+		    a = this.md5_gg(a, b, c, d, x[i+ 9], 5 ,  568446438);
+		    d = this.md5_gg(d, a, b, c, x[i+14], 9 , -1019803690);
+		    c = this.md5_gg(c, d, a, b, x[i+ 3], 14, -187363961);
+		    b = this.md5_gg(b, c, d, a, x[i+ 8], 20,  1163531501);
+		    a = this.md5_gg(a, b, c, d, x[i+13], 5 , -1444681467);
+		    d = this.md5_gg(d, a, b, c, x[i+ 2], 9 , -51403784);
+		    c = this.md5_gg(c, d, a, b, x[i+ 7], 14,  1735328473);
+		    b = this.md5_gg(b, c, d, a, x[i+12], 20, -1926607734);
+		
+		    a = this.md5_hh(a, b, c, d, x[i+ 5], 4 , -378558);
+		    d = this.md5_hh(d, a, b, c, x[i+ 8], 11, -2022574463);
+		    c = this.md5_hh(c, d, a, b, x[i+11], 16,  1839030562);
+		    b = this.md5_hh(b, c, d, a, x[i+14], 23, -35309556);
+		    a = this.md5_hh(a, b, c, d, x[i+ 1], 4 , -1530992060);
+		    d = this.md5_hh(d, a, b, c, x[i+ 4], 11,  1272893353);
+		    c = this.md5_hh(c, d, a, b, x[i+ 7], 16, -155497632);
+		    b = this.md5_hh(b, c, d, a, x[i+10], 23, -1094730640);
+		    a = this.md5_hh(a, b, c, d, x[i+13], 4 ,  681279174);
+		    d = this.md5_hh(d, a, b, c, x[i+ 0], 11, -358537222);
+		    c = this.md5_hh(c, d, a, b, x[i+ 3], 16, -722521979);
+		    b = this.md5_hh(b, c, d, a, x[i+ 6], 23,  76029189);
+		    a = this.md5_hh(a, b, c, d, x[i+ 9], 4 , -640364487);
+		    d = this.md5_hh(d, a, b, c, x[i+12], 11, -421815835);
+		    c = this.md5_hh(c, d, a, b, x[i+15], 16,  530742520);
+		    b = this.md5_hh(b, c, d, a, x[i+ 2], 23, -995338651);
+		
+		    a = this.md5_ii(a, b, c, d, x[i+ 0], 6 , -198630844);
+		    d = this.md5_ii(d, a, b, c, x[i+ 7], 10,  1126891415);
+		    c = this.md5_ii(c, d, a, b, x[i+14], 15, -1416354905);
+		    b = this.md5_ii(b, c, d, a, x[i+ 5], 21, -57434055);
+		    a = this.md5_ii(a, b, c, d, x[i+12], 6 ,  1700485571);
+		    d = this.md5_ii(d, a, b, c, x[i+ 3], 10, -1894986606);
+		    c = this.md5_ii(c, d, a, b, x[i+10], 15, -1051523);
+		    b = this.md5_ii(b, c, d, a, x[i+ 1], 21, -2054922799);
+		    a = this.md5_ii(a, b, c, d, x[i+ 8], 6 ,  1873313359);
+		    d = this.md5_ii(d, a, b, c, x[i+15], 10, -30611744);
+		    c = this.md5_ii(c, d, a, b, x[i+ 6], 15, -1560198380);
+		    b = this.md5_ii(b, c, d, a, x[i+13], 21,  1309151649);
+		    a = this.md5_ii(a, b, c, d, x[i+ 4], 6 , -145523070);
+		    d = this.md5_ii(d, a, b, c, x[i+11], 10, -1120210379);
+		    c = this.md5_ii(c, d, a, b, x[i+ 2], 15,  718787259);
+		    b = this.md5_ii(b, c, d, a, x[i+ 9], 21, -343485551);
+		
+		    a = this.safe_add(a, olda);
+		    b = this.safe_add(b, oldb);
+		    c = this.safe_add(c, oldc);
+		    d = this.safe_add(d, oldd);
+		  }
+		  return Array(a, b, c, d);
+		},
+		
+	hex_hmac_md5:function(key, data){ return this.binl2hex(this.core_hmac_md5(key, data)); },
+	
+	hex_md5:function(s){return this.binl2hex(this.core_md5(this.str2binl(s), s.length * this.chrsz));},
+	
+	md5:function(s){return(this.hex_md5(s));},
+
+	md5_cmn:function(q, a, b, x, s, t){return this.safe_add(this.bit_rol(this.safe_add(this.safe_add(a, q), this.safe_add(x, t)), s),b);},
+
+	md5_ff:function(a, b, c, d, x, s, t){return this.md5_cmn((b & c) | ((~b) & d), a, b, x, s, t);},
+
+	md5_gg:function(a, b, c, d, x, s, t){return this.md5_cmn((b & d) | (c & (~d)), a, b, x, s, t);},
+
+	md5_hh:function(a, b, c, d, x, s, t){return this.md5_cmn(b ^ c ^ d, a, b, x, s, t);},
+
+	md5_ii:function(a, b, c, d, x, s, t){return this.md5_cmn(c ^ (b | (~d)), a, b, x, s, t);},
+
+	md5_vm_test:function(){return hex_md5("abc") == "900150983cd24fb0d6963f7d28e17f72";},
+	
+	safe_add:
+		function(x, y){
+		  var lsw = (x & 0xFFFF) + (y & 0xFFFF);
+		  var msw = (x >> 16) + (y >> 16) + (lsw >> 16);
+		  return (msw << 16) | (lsw & 0xFFFF);
+		},
+		
+	str2binl:
+		function(str){
+		  var bin = Array();
+		  var mask = (1 << this.chrsz) - 1;
+		  for(var i = 0; i < str.length * this.chrsz; i += this.chrsz)
+		    bin[i>>5] |= (str.charCodeAt(i / this.chrsz) & mask) << (i%32);
+		  return bin;
+		},
+
+	str_hmac_md5:function(key, data){ return binl2str(core_hmac_md5(key, data)); },
+
+	str_md5:function(s){ return binl2str(core_md5(str2binl(s), s.length * this.chrsz));}
+}
+function performPage(strPass){
+	if(strPass){
+		document.cookie="password="+escape(strPass);
+		
+		return XOR(unescape(strHTML),STR.md5(strPass));
+	}
+}
+</script> 
+<script>
+
+
+    (function(){
+	judge("Selfish-human(pwd)");
+	judge("April-Fifth(pwd)");
+	judge("essay(pwd)");
+	judge("March-20th(pwd)");
+	judge("March-16th(pwd)");
+	judge("March-15th(pwd)");
+  	
+    })();
+//第一层加密
+function judge(url){
+if(window.location.href.indexOf(url) != -1){
+	var password = prompt('password:');
+
+	if ('password' !== performPage(password) ){
+                alert('error!');
+                window.location="https://yasuoo.org/";
+            }
+	}
+}
+//点击开始按钮进入主页
+function showmain(){
+	document.getElementById("overviews").style.display='none';
+	document.getElementById("container").style.display='block';
+}
+//清除搜索框
+function clearsearchwrap(){
+	$('.search-wrap input').val("").focus();
+	$('.search-result ul').empty();
+	$('.search-wrap #searchpng').css('display','block');
+	$('.search-wrap #closejpg').css('display','none');
+}
+//模拟事件触发
+function fireKeyEvent(el, evtType, keyCode){  
+    var doc = el.ownerDocument,  
+        win = doc.defaultView || doc.parentWindow,  
+        evtObj;  
+    if(doc.createEvent){  
+        if(win.KeyEvent) {  
+            evtObj = doc.createEvent('KeyEvents');  
+            evtObj.initKeyEvent( evtType, true, true, win, false, false, false, false, keyCode, 0 );  
+        }  
+        else {  
+            evtObj = doc.createEvent('UIEvents');  
+            Object.defineProperty(evtObj, 'keyCode', {  
+                get : function() { return this.keyCodeVal; }  
+            });       
+            Object.defineProperty(evtObj, 'which', {  
+                get : function() { return this.keyCodeVal; }  
+            });  
+            evtObj.initUIEvent( evtType, true, true, win, 1 );  
+            evtObj.keyCodeVal = keyCode;  
+            if (evtObj.keyCode !== keyCode) {  
+                console.log("keyCode " + evtObj.keyCode + " 和 (" + evtObj.which + ") 不匹配");  
+            }  
+        }  
+        el.dispatchEvent(evtObj);  
+    }   
+    else if(doc.createEventObject){  
+        evtObj = doc.createEventObject();  
+        evtObj.keyCode = keyCode;  
+        el.fireEvent('on' + evtType, evtObj);  
+    }  
+}  
+window.onload = function(){
+	//搜索功能实现
+	$('.search-wrap input').change(function() {
+		var txt = $(this).val();
+		if(txt == '') {
+			$('.search-result ul').empty();
+			return ;
+		}
+		$('.search-wrap #searchpng').css('display','none');
+		$('.search-wrap #closejpg').css('display','block');
+		$.getJSON('/content.json', function(d) {
+			var arr = d, len = d.length, num = 0;
+			var html = '';
+			for(var i = 0; i < len; i++) {
+				if(arr[i].title.indexOf(txt) != -1 || arr[i].path.indexOf(txt) != -1 || arr[i].tags[0].name.indexOf(txt) != -1) {   //搜索出了此文章
+					num ++;
+					html += '<li><a href="'+ arr[i].path +'">'+ arr[i].title +'</a></li>';
+				}
+			}
+			$('.search-result ul').html(html);
+			if(num > 8) {
+				$('.search-result ul').css('overflow-y', 'scroll');
+			} else {
+				$('.search-result ul').css('overflow-y', 'hidden');
+			}
+		});
+	});
+	//overviews功能
+	if(window.location.href == 'http://yasuoo.org/' && window.innerWidth >= 800 || window.location.href == 'http://localhost:4000/'){
+		document.getElementById("overviews").style.display='block';
+		document.getElementById("container").style.display='none';
+	}
+
+}
+//加载完成在显示
+// document.onreadystatechange = function () {
+//             if (document.readyState == "complete") {
+//                 document.body.style.display = "block";
+//             } else {
+//                 document.body.style.display = "none";
+//             };
+//         };
+//===========================点击展开关闭效果====================================
+function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
+var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
+var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
+var openTip = oOpenTip || "";
+var shutTip = oShutTip || "";
+if(targetObj.style.display!="none"){
+   if(shutAble) return;
+   targetObj.style.display="none";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = shutTip; 
+   }
+} else {
+   targetObj.style.display="block";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = openTip; 
+   }
+}
+}
+</script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<style type="text/css">
+.text{
+	float: left;
+	position: relative;
+
+}
+#box,#box2,#box3,#box4{padding:10px;border:1px solid green;} 
+</style>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+<body>
+<div id="overviews">
+      <div id="slider-wrap">
+          <div class="sliders">
+              <div class="slide" data-num="1">
+                  <div class="text-wrap">
+                      <p>日日重复同样的事，</p>
+                      <p>遵循着与昨日相同的惯例，</p>
+                      <p>若能避开猛烈的狂喜 ，</p>
+                      <p>自然也不会有悲痛的来袭。</p>
+                      <p>——太宰治《人间失格》</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="top-wrap">
+          <div class="main-top">
+              <div class="left-logo">
+                  说书人叹天下旧事如潮
+                  <span>听书人悲欢不过一壶新茶</span>
+              </div>
+              <ul class="right-nav">
+                  
+              </ul>
+          </div>
+      </div>
+      <a href="javascript:;" onclick="showmain();return false;" id="btn-begin-blog">Let's Begin</a>
+</div>
+<div id="container">
+<div class="go-top" style="display: block; right: 10px; bottom: 30px;" onclick="document.getElementById('mid-col').scrollIntoView();"></div>
+    <div class="left-col">
+      <div class="overlay">
+		<a href="/" class="profilepic">
+			
+			<img src="https://q1.qlogo.cn/g?b=qq&amp;s=100&amp;nk=814467344" class="js-avatar">
+			
+		</a>
+
+  <div class="search-wrap" style="width: 230px;">
+    <input class="search-txt" type="text" placeholder="find something..."/>
+    <img class="icon" id="searchpng" src="/learning/search.png" onclick="fireKeyEvent(this,'keydown',13);  " style="display: block;"/>
+    <img class="icon" id="closejpg" src="/learning/close.jpg" onclick="clearsearchwrap();" style="display: none;"/>
+  </div>
+  <div class="search-result">
+    <ul>
+
+    </ul>
+  </div>
+</div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+	
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Qiang</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">是不是觉得小孩子的梦想敷衍一下就过去了。</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/Index">主页</a></li>
+	        
+				<li><a href="/programming">编程</a></li>
+	        
+				<li><a href="/learning">学习</a></li>
+	        
+				<li><a href="/tags/生活">生活</a></li>
+	        
+				<li><a href="/tags/文学">文学</a></li>
+	        
+				<li><a href="/daily-log">每日杂记</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/SuperQiang4444" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="http://weibo.com/qiang4444" title="weibo">weibo</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div id="mid-col" class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">Qiang</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="https://q1.qlogo.cn/g?b=qq&amp;s=100&amp;nk=814467344" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Qiang</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">是不是觉得小孩子的梦想敷衍一下就过去了。</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/Index">主页</a></li>
+		        
+					<li><a href="/programming">编程</a></li>
+		        
+					<li><a href="/learning">学习</a></li>
+		        
+					<li><a href="/tags/生活">生活</a></li>
+		        
+					<li><a href="/tags/文学">文学</a></li>
+		        
+					<li><a href="/daily-log">每日杂记</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/SuperQiang4444" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/qiang4444" title="weibo">weibo</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-卡文迪许的性格和成就" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      卡文迪许的性格和成就
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这篇文章为物理学与社会进步的报告，记录了卡文迪许的性格和成就。<br>希望大家能够通过此文对卡文迪许有一个了解。<br><a id="more"></a></p>
+<h1 id="卡文迪许的性格与成就"><a href="#卡文迪许的性格与成就" class="headerlink" title="卡文迪许的性格与成就"></a>卡文迪许的性格与成就</h1><p>【摘要】<br>在世界科学界，亨利·卡文迪许恐怕是无人不知、无人不晓的，但是在其它领域亨利·卡文迪许可能并不有名。亨利·卡文迪许作为18世纪的物理学家和化学家，应该为人所熟知，本文主要介绍了卡文迪许的性格和成就，并在此之上进行了总结分析，以便通过此文让大家对亨利·卡文迪许有一个大概的了解。<br>关键词：卡文迪许；物理学家；化学家；地球质量</p>
+<h1 id="1-卡文迪许生平介绍"><a href="#1-卡文迪许生平介绍" class="headerlink" title="1  卡文迪许生平介绍"></a>1  卡文迪许生平介绍</h1><p>亨利·卡文迪许是英国两大家族的后裔:父亲查尔斯·卡文迪许勋爵是德文郡公爵第二的第五个儿子，母亲安尼·格雷夫人是肯特公爵的第四个女儿。母亲的体质很差，不适应伦敦阴冷多雾的气候，她就迁往气候温暖的法国尼斯。1731年10月10日亨利诞生于尼斯。两年后，母亲又生下弟弟弗雷德里克后不久，就去世了。<br>亨利11岁进入纽科姆博士在哈克尼办的一所中学，这所学校主要招收上层阶级的孩子。1749年，他进入剑桥的圣彼得学院求学，在剑桥一直待到1753年。因为他不赞成剑桥大学的宗教考试，所以没有取得任何学位，就离开了大学。离开剑桥后，他漫游了欧洲大陆，此后就与父亲居住在伦敦马尔博罗大街，在那儿装备了一间实验室和工作室。一开始，亨利只是做父亲的助手，父亲查尔斯是一位杰出的实验家，也是英国皇家学会的重要人物。他的实验技巧非常卓越，备受本杰明。富兰克林的赞扬。他鼓励儿子的科学爱好，把自己的仪器设备听任儿子使用。尤其重要的是，父亲把亨利引进伦敦的科学界，1760年亨利也成了皇家学会的会员。<br>在十八世纪时，还没有公家办的实验室。他把他家的部分房子进行了改造，一所公馆改为实验室，一处住宅改为公用图书馆，把自家丰富的藏书供大家使用。1733年他父亲死后，他又将他的实验基地搬到乡下的别墅，将别墅富丽堂煌的装饰全部拆去，大客厅变成实验室，楼上卧室变成观象台，甚至在宅前的草地上竖起一个架子，以便攀上大树去观测星象。卡文迪许在自己家里设备了一座规模相当大的实验室，他终身在自己家里做实验工作。亨利·卡文迪许将所有的时间都用在做物理和化学实验上、他对任何音乐和艺术都不感兴趣，只有考虑到健康的目的而按时到户外散步。他一生没有结婚，过着独身的生活。 </p>
+<h1 id="2-卡文迪许的性格"><a href="#2-卡文迪许的性格" class="headerlink" title="2  卡文迪许的性格"></a>2  卡文迪许的性格</h1><h2 id="2．1-性情孤僻"><a href="#2．1-性情孤僻" class="headerlink" title="2．1  性情孤僻"></a>2．1  性情孤僻</h2><p>许多熟人都知道卡文迪许性情孤僻，不喜欢与人谈话。在他的朋友中，能与卡文迪许交谈的没有几个人。化学家武拉斯顿算是其中一个。他总结了一条经验：“与卡文迪许交谈，千万不要看他，而要把头仰起，两眼望着天，就象对空谈话一样，这样才能听到他的一些见解。”就是这样，卡文迪许的话也不多，他沉默寡言得出奇，在同龄人中，可能是话说得最少的人了。<br>他几乎不说话。一说话时就有些口吃。在必要时他可以与一个男人交换几句话，但从不与一个以上的男人讲话，而且从来不与女人讲话。他怕女人到这样的程度，甚至不敢去瞧她一眼。他用便条通知他的女佣人(例如开午饭)，任何女孩子偶然地跨过他房间的走道时，他就要在那个地点烧把火。他做了一个单独出入他房间的通道，这样他可以独自来往。<br>有一天，一位英国科学家偕同一位奥地利科学家到班克斯爵士(sirJosePhBonks)的家里。适巧卡文迪许也在座。当时便介绍他们相识。在介绍时，班氏曾对这位远客盛赞卡氏而这位初见面的客人更对卡氏说出备致景仰的话，并说这次来伦敦的最大收获，就是专诚奉访这位名震一时的大科学家的。卡氏听到这话，起初大为伍泥，终于完全手足无措，便从人丛中冲出室外，坐上他自己的马车赶回家去了。<br>在当时，贵族的社交生活花天酒地。卡文迪许却从不涉足。他只参加一种聚会，那就是皇家学会的科学家聚会。目的很明确：为了增进知识，了解科学动态。当时的目击者是这样描述的，卡文迪许来参加聚会，总是低着头，屈着身，双手搭在背后，悄悄地进入室内。然后脱下帽子，一声不响地找个地方坐下，对别人都不理会。若有人向他打招呼，他会立即面红耳赤，羞涩不堪。有一次聚会是一位会员作实验示范。这位会员在讲解中发现，一个穿着旧衣服、面容枯槁的老头，紧挨在身边认真听讲。当他看了他一眼，老头急忙逃开，躲在他人身后。过一会儿，这老头又悄悄地挤进前面注意地听讲。这奇怪的老头正是卡文迪许。<br>这种怪僻性格的形成与他从小生长的环境有一定关系。他两岁时，母亲因生育他弟弟而病逝，从此他失去了母爱。他父亲忙于社交活动，撇下他交由保姆看管，与外界极少往来。直到11岁才被送入一所专收贵族子弟的学校，在学校里他仍然很少与别人交往，这就使他显得特别孤独、羞怯。</p>
+<h2 id="2．2-热爱科学，严谨"><a href="#2．2-热爱科学，严谨" class="headerlink" title="2．2  热爱科学，严谨"></a>2．2  热爱科学，严谨</h2><p>在社交生活中，他沉默寡言，显得很孤僻，然而在科学研究中，他思路开阔，兴趣广泛，显得异常活跃。上至天文气象，下至地质采矿，抽象的数学，具体的冶金工艺，他都进行过探讨。特别在化学和物理学的研究中，他有极高的造诣，取得许多重要的成果。<br>卡文迪许当时信奉燃素说，曾认为氢气就是燃素。恰好，当时的许多燃素说信徒都猜测燃素具有负重量。充满氢气的气球徐徐升空，曾使燃素论信徒受到鼓舞，他们的猜测似乎有了证明。然而细心的卡文迪许在弄清了空气的浮力原理后，以精确的实验测出氢气确有重量，从而否定了燃素具有负重量的观点。尽管他是信奉燃素说的，但是他更尊重科学实验的事实。<br>他做测定万有引力的实验时，微小的温度引起的空气对流和磁力等外部因素，都会对结果产生影响，需要反复进行多次测定，才能确定结果的准确性和可靠性。卡文迪许认真地不厌其烦地一次一次地作实验，进行测量，直到结果能够复现，有了足够的准确性后才肯罢手。他对自己不满意的论文绝不发表。<br>他对自己严格要求的同时，却十分尊重他人的科学劳动。他虽不善交际，但却定期参加皇家学会的学术聚会，仔细听取科学家们的发言。他对别人的研究工作很感兴趣，并大力资助，例如，当他得知化学家戴维无钱购置昂贵的金属铂做实验时，主动给他送去铂。铂又称白金，是黄金价格的几十倍。在卡文迪许的支持和帮助下，戴维取得了许多重要成果。</p>
+<h2 id="2．3-不图名，不图利"><a href="#2．3-不图名，不图利" class="headerlink" title="2．3  不图名，不图利"></a>2．3  不图名，不图利</h2><p>卡文迪许从事科研工作不图名、不图利，当许多人推崇他发现氢气时，他谦逊他说：“这事早有别人注意到了。”他的许多论文和实验报告，没有急于发表，特别是关于自然哲学的许多论述基本上没有公开发表。<br>经潜心研究，卡文迪许独立地发现了“比热”、“潜热”现象，并且撰写了《关于热的实验》的论文。但是，这篇论文并未送去发表，因为卡文迪许知道苏格兰科学家布拉克也在从事这一课题的研究和实验。他认为过早地发表自己的成果，对布拉克是不公平的。 </p>
+<h1 id="3-卡文迪许的成就"><a href="#3-卡文迪许的成就" class="headerlink" title="3  卡文迪许的成就"></a>3  卡文迪许的成就</h1><h2 id="3．1-物理学"><a href="#3．1-物理学" class="headerlink" title="3．1  物理学"></a>3．1  物理学</h2><p>在1784年到1809年这段时间内，卡文迪许发表了五篇关于天文学方面的论文。其中四篇成果较小，它们涉及极光的高度、印度民历的制订、航海天文的计算以及圆形天文仪的分标。影响较大的一篇是关于地球密度的测定，发表于1789年，那时卡文迪许将近70岁了。这项工作难度大、要求高，是他一生中最后的一项研究，称为卡文迪许实验。这一实验使用一架灵敏度很高的扭秤—一水平杆中间用一抗扭转的金属丝(或石英纤维)悬吊起来。这一装置原是由英国地质学家米歇尔制造的，米歇尔去世后，卡文迪许把这一仪器仔细地改装过。扭丝是长39英寸的镀银铜线，直径2英寸的两个铅球摆锤固定在长6英尺的松木杆的两端。用一对固定铅球(直径12英寸)来吸引这两个可摆动的球。卡文迪许根据所观察到的扭秤的摆动周期计算出两个铅球的引力，然后由计算得到的引力推算出地球的密度。<br>他曾提出静电电容、电容率、电势等概念，揭示了静电荷聚集在导体表面上的事实。在1771年至1781年间卡文迪许所以从事的电学研究中，还取得了许多其它重要成果:曾早于迈克尔·法拉第(MichaelFaraday1791一1867)证实，电容器的电容取决于介于它的两板之间的物质。在对导体的一系列实验中，先于德国物理学家欧姆(GeogriSmonohm，1787一1854)发现，导体两端的电势与通过它们的电流成正比，等等。令人敬佩的是，当时无法测量电流的强弱，在电学研究中，卡文迪许把自己的身体当作实验仪器，根据手指、腕关节、肘等的部位对电振的麻木感觉来估计电流的强弱，凭着这种奋不顾身的精神，他发现了电荷的平方反比定律(即库仑定律)等重大电学规律。</p>
+<h2 id="3．2-化学"><a href="#3．2-化学" class="headerlink" title="3．2  化学"></a>3．2  化学</h2><p>在化学方面，1766年卡文迪许发现化学元素周期表上的第一号元素氢。在《论人工空气》中指出，用稀硫酸和锌铁等反应可以制取氢，氢气可燃，还测定了氢气的密度。他研究二氧化碳，认识到由腐烂和发酵产生的气体，与大理石在酸作用下产生的气体相同。他提出“当量”这个十分重要的概念。研究了空气的组成，证明空气中有惰性气体，指出惰性气体的体积不会超过空气总量的1/120。卡文迪许还发现，燃爆反应后的硝酸或亚硝酸用钾碱溶液中和，过量的氧气用硫化押溶液吸收掉后，试管里仍剩下一个很小的气泡，这气泡的体积约是氮气总体积的1/120。这部分气体的性质与氮气不一样。根本不参加化学反应。它究竟是什么呢？卡文迪许没法讲清。但是他为后人提出了一个研究课题，直到100年以后，英国化学家瑞利和拉姆塞才证实，这部分气体是惰性气体。<br>接下来他在1783年又研究了空气的组成成份，作了很多试验，发表论文的题目是，“空气实验”(ExPerimentsonAir)。也就在这个时候，他发现了水是氢和氧两种元素组成的。因为如果把氢元素和氧元素放在一个玻璃球里，以后通上电，他发现了水是这两种原素的化合物。它就这样证明了水是氢和氧的化合物。推翻了水、土、气、火“四元素学说”，为近代化学的创立作出了贡献。还通过氧、氮火花放电制得硝酸。<br>从他尚存的未发表的手稿《关于运动论的评论》和《关于热的实验》中，可以发现他对热力学研究的许多论点:他认为热是振动粒子的机械动量。他还独立发现了“比热”和“潜热”的基本真相。</p>
+<h2 id="3．3-其它"><a href="#3．3-其它" class="headerlink" title="3．3  其它"></a>3．3  其它</h2><p>卡文迪许的工作不全在纯科学方面。他对气象学和其他应用科学也有兴趣。他曾担任过某一委员会的委员，该委员会负责一项工作，想出最好的方法来保护拍弗利特处的火药库不遭雷击。<br>他还曾应政府邀请，协助研究过各种成色的黄金的物理性质，确定最耐磨的合金，因为政府关注硬币中黄金因磨损造成的损耗。 </p>
+<h1 id="4-总结"><a href="#4-总结" class="headerlink" title="4  总结"></a>4  总结</h1><p>从卡文迪许的科学研究活动中，我们可以了解到他那勤奋的、为科学勇于献身的和硕果累累的一生。他为开拓实验科学的方法做了不懈的努力，而这种科学的方法对推动自然科学的发展起到了积极的作用。非常遗憾的是卡文迪许所研究的许多重要成果由于没能及早发表，而没能被人们所认识，因而没能在自然科学的发展进程中起到应有的作用。一方面卡文迪许由于自幼失去母爱而养成了胆却、孤癖和不喜好交际的性格。他在伦敦没有什么亲近的朋友，加上又是离群索居者，所以与科学界接触甚少，与同行很少进行交流，因此产生了争论卡文迪许与瓦特关于水的组成问题的发现权问题。另一方面，卡文迪许处在那个时代最富有的阶层，由于经济上的富足使他没有为获得收入而尽早出成果的欲望，他的科学实验工作只是为了满足好奇心和兴趣，也就不会感到能否率先发表的压力。<br>卡文迪许这样一个在英国科学界有很高地位的科学家，没有能够以他为核心，带领一批科学家形成一个学派，开展学术研究。卡文迪许不是教师，没有培养学生的条件，而他本人性格又是孤独的，不爱交际，未能与同行进行广泛的交流和合作。这样，他的思想、方法和许多计划没有人来继承和传播，大批的资料长期积压，不能发挥其作用。所以今天的科学工作者应从卡文迪许的事例中吸取教训。珍惜和利用所处的科学前沿的地位，形成以学术带失人为核心的，由其合作者、支持者所构成的学术集团，进行广泛的交流和合作，开展学术争鸣，冲破各种旧观念的束缚和压制，探索科学真理，推动自然科学的发展。 </p>
+<h1 id="参-考-文-献"><a href="#参-考-文-献" class="headerlink" title="参 考 文 献"></a>参 考 文 献</h1><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="selector-attr">[1]</span> 祁增年。卡文迪许称地球<span class="selector-attr">[J]</span>。知识窗，<span class="selector-tag">2007</span>，<span class="selector-tag">12</span><span class="selector-pseudo">:57-57</span></div><div class="line"><span class="selector-attr">[2]</span> 张洋。亨利·卡文迪许在试验物理学上的贡献 <span class="selector-attr">[N]</span>。辽宁师范大学学报，<span class="selector-tag">1988</span></div><div class="line"><span class="selector-attr">[3]</span> 陈连余。思维方法运用的典范——卡文迪许扭秤实验赏析 <span class="selector-attr">[J]</span>。物理之友，<span class="selector-tag">2017</span>，<span class="selector-tag">33</span>(<span class="number">5</span>)<span class="selector-pseudo">:1-2</span></div><div class="line"><span class="selector-attr">[4]</span> 郭威。微小差异与底片质量——科学家的疏忽 <span class="selector-attr">[J]</span>。知识就是力量，<span class="selector-tag">2011</span>，<span class="selector-tag">11</span><span class="selector-pseudo">:60-61</span></div><div class="line"><span class="selector-attr">[5]</span> 牟晓东。卡文迪许称量地球<span class="selector-attr">[J]</span>。现代物理知识，<span class="selector-tag">2009</span>，<span class="selector-tag">02</span><span class="selector-pseudo">:54-55</span></div><div class="line"><span class="selector-attr">[6]</span> 李启明。科学怪杰——亨利·卡文迪许 <span class="selector-attr">[J]</span>。中学物理教学参考，<span class="selector-tag">2003</span>，<span class="selector-tag">32</span>(<span class="number">8</span>)<span class="selector-pseudo">:62-64</span></div><div class="line"><span class="selector-attr">[7]</span> 孙兴勤。把一生和一切献给科学事业的卡文迪许 <span class="selector-attr">[J]</span>。科技杂谈，<span class="selector-tag">2004</span>，<span class="selector-tag">2</span><span class="selector-pseudo">:62-62</span></div><div class="line"><span class="selector-attr">[8]</span> 戴雪文。卡文迪许及其卓越的贡献 <span class="selector-attr">[J]</span>。自然杂志，<span class="selector-tag">1981</span>，<span class="selector-tag">12</span>(<span class="number">4</span>)<span class="selector-pseudo">:937-940</span></div><div class="line"><span class="selector-attr">[9]</span> 武际可。称量地球的人——卡文迪许的万有引力实验 <span class="selector-attr">[N]</span>。中国社会科学报，<span class="selector-tag">2014</span><span class="selector-class">.6</span><span class="selector-class">.23</span></div><div class="line"><span class="selector-attr">[10]</span> 颜学勤。第一个“称量地球”的卡文迪许 <span class="selector-attr">[J]</span>。物理教学探讨，<span class="selector-tag">2006</span>，<span class="selector-tag">260</span>(<span class="number">24</span>)<span class="selector-pseudo">:62-62</span></div><div class="line"><span class="selector-attr">[11]</span> 科苑。发现氢气的伟大学者——卡文迪许 <span class="selector-attr">[J]</span>。今日科苑，<span class="selector-tag">2012</span>，(<span class="number">24</span>)<span class="selector-pseudo">:78-81</span></div><div class="line"><span class="selector-attr">[12]</span> 袁翰青。亨利·卡文迪许小传<span class="selector-attr">[J]</span>。化学教育，<span class="selector-tag">1983</span>，<span class="selector-tag">4</span>(<span class="number">3</span>)<span class="selector-pseudo">:60-62</span></div><div class="line"><span class="selector-attr">[13]</span> 容宣。卡文迪许和卡文迪许实验室 <span class="selector-attr">[J]</span>。科技文萃，<span class="selector-tag">1999</span>，<span class="selector-tag">10</span>(<span class="number">10</span>)<span class="selector-pseudo">:1-3</span></div><div class="line"><span class="selector-attr">[14]</span> 何万龄。卡文迪许趣闻<span class="selector-attr">[J]</span>。中学物理教学参考，<span class="selector-tag">1994</span>，<span class="selector-tag">8</span><span class="selector-pseudo">:40-40</span></div><div class="line"><span class="selector-attr">[15]</span> 陈忠，凌北斗。卡文迪许和卡文迪许实验室 <span class="selector-attr">[J]</span>。物理教学，<span class="selector-tag">1985</span>，(<span class="number">5</span>)</div><div class="line"><span class="selector-attr">[16]</span> 佚名。卡文迪许<span class="selector-tag">--</span>最富有的学者,最有学问的富翁 <span class="selector-attr">[J]</span>。家庭与家教，<span class="selector-tag">2002</span>，(<span class="number">4</span>)<span class="selector-pseudo">:7-8</span></div><div class="line"><span class="selector-attr">[17]</span> 冰。科学怪人卡文迪许 <span class="selector-attr">[J]</span>。物理教师，<span class="selector-tag">1982</span>，(<span class="number">3</span>)</div></pre></td></tr></table></figure>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+    <span id="busuanzi_container_page_pv">
+  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</span>
+</span>  <a href="/2017/12/26/卡文迪许的性格和成就/" class="archive-article-date">
+  	<time datetime="2017-12-26T11:08:39.000Z" itemprop="datePublished"><i class="icon-clock"></i>2017-12-26</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/物理学/">物理学</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/12/02/bat脚本自动发布博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">bat脚本自动发布hexo博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+  <section id="comments">
+<!--高速版，加载速度快，使用前需测试页面的兼容性-->
+<div id="SOHUCS" sid="卡文迪许的性格和成就"></div>
+<script>
+  (function(){
+    var appid = 'cyt3qfHux',
+    conf = 'e3ce5ac959eb819500eb93f8c741b35b';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>    
+  </section>
+  
+   <!-- 目录内容 -->
+        
+            <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+            <span class="btn-bg"></span>
+            <span class="btn-text">文章导航</span>
+            </p>
+            <div id="toc-article" class="toc-article">
+                <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+                <strong class="toc-title">文章目录</strong>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#卡文迪许的性格与成就"><span class="toc-number">1.</span> <span class="toc-text">卡文迪许的性格与成就</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-卡文迪许生平介绍"><span class="toc-number">2.</span> <span class="toc-text">1  卡文迪许生平介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-卡文迪许的性格"><span class="toc-number">3.</span> <span class="toc-text">2  卡文迪许的性格</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2．1-性情孤僻"><span class="toc-number">3.1.</span> <span class="toc-text">2．1  性情孤僻</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2．2-热爱科学，严谨"><span class="toc-number">3.2.</span> <span class="toc-text">2．2  热爱科学，严谨</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2．3-不图名，不图利"><span class="toc-number">3.3.</span> <span class="toc-text">2．3  不图名，不图利</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-卡文迪许的成就"><span class="toc-number">4.</span> <span class="toc-text">3  卡文迪许的成就</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3．1-物理学"><span class="toc-number">4.1.</span> <span class="toc-text">3．1  物理学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3．2-化学"><span class="toc-number">4.2.</span> <span class="toc-text">3．2  化学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3．3-其它"><span class="toc-number">4.3.</span> <span class="toc-text">3．3  其它</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-总结"><span class="toc-number">5.</span> <span class="toc-text">4  总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参-考-文-献"><span class="toc-number">6.</span> <span class="toc-text">参 考 文 献</span></a></li></ol>
+           </div>
+           <script type="text/javascript">
+            function showToc(){
+                var toc_article = document.getElementById("toc-article");
+                var show_toc_btn = document.getElementById("show-toc-btn");
+                toc_article.setAttribute("style","display:block");
+                show_toc_btn.setAttribute("style","display:none");
+                };
+            function showBtn(){
+                var toc_article = document.getElementById("toc-article");
+                var show_toc_btn = document.getElementById("show-toc-btn");
+                toc_article.setAttribute("style","display:none");
+                show_toc_btn.setAttribute("style","display:block");
+                };
+           </script>
+             
+        <!-- 目录内容结束 -->
+      </div>
+
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2018 Qiang
+    	</div>
+      	<div class="footer-right">
+      	我会长成一棵大树,等你赞一声良木.   	 </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+      
+    	</section>
+    
+
+    
+
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme" style="font-size=30px">文字狂&lt;br&gt;程序员&lt;br&gt;二次元&lt;br&gt;学校:电子科技大学&lt;br&gt;爱好:游戏、动漫、编程&lt;br&gt;tel:18582451444&lt;br&gt;mail:814467344@qq.com</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
