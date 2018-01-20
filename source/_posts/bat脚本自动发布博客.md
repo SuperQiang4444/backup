@@ -14,9 +14,9 @@ tags:
 rem 下面2行表示进入到hexo博客根目录。
 C:
 cd \Users\444\hexo-demo\
-rem 注意最后一行必须连写，因为执行hexo就不会返回原来的cmd，所以在hexo下执行完所有命令。
+rem 注意最后一行必须连写，因为执行hexo就不会返回原来的cmd，所以在hexo下执行完所有命令。前面3个git命令用来备份博客。
 echo Job start!
-hexo clean && hexo g && hexo d && echo Job is done! && pause
+git add . && git commit -m "0点备份" && git push -u origin master && hexo clean && hexo g && hexo d && echo Job is done! && pause
 ```
 ### windows下设置计划任务
 ```

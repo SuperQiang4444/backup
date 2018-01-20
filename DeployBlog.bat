@@ -2,5 +2,5 @@
 C:
 cd \Users\444\hexo-demo\
 echo Job start!
-hexo clean && hexo g && hexo d && echo Job is done! && pause
+git add . && git commit -m "0µã±¸·Ý" && git push -u origin master && hexo clean && hexo g && hexo d && echo Job is done! && pause
 
