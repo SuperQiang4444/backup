@@ -2,9 +2,9 @@
 title: 学习
 date: 2017-05-22 18:38:13
 ---
-<a class="btn" href="https://superqiang4444.github.io/tags/数学" target="_self">数学</a>
-<a class="btn" href="https://superqiang4444.github.io/tags/英语" target="_self">英语</a>
-<a class="btn" href="https://superqiang4444.github.io/tags/物理学" target="_self">物理学</a>
+<a class="btn" href="https://yasuoo.org/tags/数学" target="_self">数学</a>
+<a class="btn" href="https://yasuoo.org/tags/英语" target="_self">英语</a>
+<a class="btn" href="https://yasuoo.org/tags/物理学" target="_self">物理学</a>
 <style type="text/css">
 .btn {
   display: block;
