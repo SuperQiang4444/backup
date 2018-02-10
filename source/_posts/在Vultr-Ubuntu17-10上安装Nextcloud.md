@@ -6,8 +6,9 @@ tags:
 - Nextcloud
 ---
 在互联网时代，“隐私”一词变得岌岌可危。
-在中国各大网盘不顾用户的隐私，随意使用数据的现象已经司空见惯。于是就想着搭建一个私人网盘，经过各方面考虑我最终选择了Nextcloud。
-Nextcloud可谓“乱世之中，避风之港”。
+在中国各大网盘不顾用户的隐私，随意使用数据的现象已经司空见惯，于是就想着搭建一个私人网盘。
+素闻Nextcloud天府乡，乱世之中，避风之港。
+所以我决定尝试一下。
 <!--more-->
 # 前言
 首先，我查阅了各种博客，由于我的服务器是512MB的内存不能安装Mysql5.7,所以最终将目标转向了Vultr官方文档[How to Install Nextcloud on Ubuntu 17.04](https://www.vultr.com/docs/how-to-install-nextcloud-on-ubuntu-17-04)。
