@@ -103,7 +103,7 @@ header / Strict-Transport-Security "max-age=31536000;"
 
 }
 ```
-让我们也把Caddy变成一项服务。将这些行粘贴到文件中/etc/systemd/system/caddy.service(如果你有多个网站需要进行解析，需要将PrivateTmp=true更改我false)。
+让我们也把Caddy变成一项服务。将这些行粘贴到文件中/etc/systemd/system/caddy.service(如果你有多个网站需要进行解析，需要将PrivateTmp=true更改为false)。
 ```
 [Unit]
 Description=Caddy HTTP/2 web server %I
