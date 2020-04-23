@@ -103,6 +103,6 @@ exclude_generator:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@yasuoo.org:/var/repo/blog.git
+  repo: git@blog.yasuoo.org:/var/repo/blog.git
   branch: master
 
